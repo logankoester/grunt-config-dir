@@ -1,5 +1,7 @@
 # grunt-config-dir
 
+[![Build Status](https://travis-ci.org/logankoester/grunt-config-dir.png)](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME])
+
 > Split a grunt configuration into multiple files
 
 ## Getting Started
@@ -23,7 +25,7 @@ require('grunt-config-dir')(grunt, {
 }, function(err){ grunt.log.error(err) });
 ```
 
-Then create your `configDir` and move as many properties as you wish from grunt.config into files beneath it. Filenames with truncated
+Then create your `configDir` and move as many properties as you wish from `grunt.config` into files beneath it. Filenames with truncated
 extensions are used as the property keys. Your property files should export a function expecting the `grunt` object as a parameter,
 which returns the property value.
 
@@ -70,7 +72,7 @@ grunt.initConfig({
 // grunt.loadNpmTasks('grunt-contrib-copy');
 ```
 
-#### grunt/copy.coffee
+#### grunt/copy.js
 
 ```js
 module.exports = function(grunt) {
