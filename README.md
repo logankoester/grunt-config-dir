@@ -96,4 +96,5 @@ Thanks!
 ## Release History
 
 0.2.0 - Fixes entry point, deprecates `verbose` option in favor of [grunt.verbose](http://gruntjs.com/api/grunt.log#verbose-and-notverbose)
+
 0.1.0 - First release
