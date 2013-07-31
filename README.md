@@ -1,6 +1,6 @@
 # grunt-config-dir
 
-[![Build Status](https://travis-ci.org/logankoester/grunt-config-dir.png)](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME])
+[![Build Status](https://travis-ci.org/logankoester/grunt-config-dir.png)](https://travis-ci.org/logankoester/grunt-config-dir)
 
 > Split a grunt configuration into multiple files
 
