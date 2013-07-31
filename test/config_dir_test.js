@@ -31,18 +31,16 @@ exports.config_dir = {
   },
 
   specified_option: function(test) {
-    test.expect(3);
+    test.expect(2);
 
     var expected = {
       configDir: path.resolve('test/fixtures/'),
-      verbose: true,
       fileExtensions: ['js']
     };
 
     var result = configDir( grunt, expected );
 
     test.equal(result.options.configDir, expected.configDir, 'configDir should be ' + expected.configDir );
-    test.equal(result.options.verbose, expected.verbose, 'verbose should be ' + expected.verbose );
     test.equal(result.options.fileExtensions, expected.fileExtensions, 'fileExtensions should be ' + expected.fileExtensions );
 
     test.done();
@@ -51,7 +49,7 @@ exports.config_dir = {
   js_files: function(test) {
     test.expect(1);
 
-    var result = configDir( grunt, { configDir: path.resolve('test/fixtures/'), verbose: true, fileExtensions: ['js'] } );
+    var result = configDir( grunt, { configDir: path.resolve('test/fixtures/'), fileExtensions: ['js'] } );
     test.equal('hello javascript', grunt.config.get('foo').message, 'should be evaluated into grunt.config');
 
     test.done();
@@ -60,7 +58,7 @@ exports.config_dir = {
   coffee_files: function(test) {
     test.expect(1);
 
-    var result = configDir( grunt, { configDir: path.resolve('test/fixtures/'), verbose: true, fileExtensions: ['coffee'] } );
+    var result = configDir( grunt, { configDir: path.resolve('test/fixtures/'), fileExtensions: ['coffee'] } );
     test.equal('hello coffeescript', grunt.config.get('bar').message, 'should be evaluated into grunt.config');
 
     test.done();

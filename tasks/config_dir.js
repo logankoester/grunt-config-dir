@@ -18,8 +18,7 @@ module.exports = function(grunt, options, errHandler) {
   res = { options: {} };
   res._defaultOptions = {
     configDir: path.resolve('grunt'),
-    fileExtensions: ['js', 'coffee'],
-    verbose: false
+    fileExtensions: ['js', 'coffee']
   };
   grunt.util._.extend(res.options, res._defaultOptions, options);
 
@@ -32,11 +31,11 @@ module.exports = function(grunt, options, errHandler) {
       grunt.config.set(match[1], require(baseDir + '/' + filename)(grunt));
 
       if (res.options.verbose) {
-        grunt.log.writeln('Grunt configuration [' + match[1] + '] loaded from' + filename + ' successfully.');
+        grunt.verbose.ok('Grunt configuration [' + match[1] + '] loaded from ' + filename + ' successfully.');
       }
     } else {
       if (res.options.verbose) {
-        grunt.log.writeln('Grunt configuration file ignored: ' + filename);
+        grunt.verbose.debug('Grunt configuration file ignored: ' + filename);
       }
     }
   }, function(err){
