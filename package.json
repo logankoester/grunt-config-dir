@@ -21,7 +21,7 @@
       "url": "https://github.com/logankoester/grunt-config-dir/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "Gruntfile.js",
+  "main": "tasks/config_dir.js",
   "engines": {
     "node": ">= 0.8.0"
   },
