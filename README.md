@@ -95,6 +95,8 @@ Thanks!
 
 ## Release History
 
+0.3.0 - Cleaner verbose logging, fixed an issue with joining multiple file extensions, more comprehensive return object
+
 0.2.0 - Fixes entry point, deprecates `verbose` option in favor of [grunt.verbose](http://gruntjs.com/api/grunt.log#verbose-and-notverbose)
 
 0.1.0 - First release
