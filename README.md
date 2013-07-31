@@ -87,14 +87,8 @@ module.exports = function(grunt) {
 
 1. Fork the [repository on Github](https://github.com/logankoester/grunt-config-dir)
 2. Fetch a local clone
-3. Install the dependencies
-
-    $ npm install
-
-4. Run the test suite
-
-    $ grunt
-
+3. Install the dependencies: `$ npm install`
+4. Run the test suite: `$ grunt`
 5. Make your changes, and then [open a pull request](https://github.com/logankoester/grunt-config-dir/pulls)
 
 Thanks!
