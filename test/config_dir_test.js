@@ -62,6 +62,15 @@ exports.config_dir = {
     test.equal('hello coffeescript', grunt.config.get('bar').message, 'should be evaluated into grunt.config');
 
     test.done();
+  },
+
+  multiple_filetypes: function(test) {
+    test.expect(1);
+
+    var result = configDir( grunt, { configDir: path.resolve('test/fixtures/'), fileExtensions: ['js', 'coffee'] } );
+
+    test.equal('js|coffee', result.fileExtensionPattern, 'should join file extensions delimited by |');
+    test.done();
   }
 
 };
