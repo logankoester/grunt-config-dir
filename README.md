@@ -20,8 +20,7 @@ Somewhere in your project's Gruntfile, initialize `grunt-config-dir`  like this:
 ```js
 require('grunt-config-dir')(grunt, {
     configDir: require('path').resolve('grunt'),
-    fileExtensions: ['js', 'coffee'],
-    verbose: false
+    fileExtensions: ['js', 'coffee']
 }, function(err){ grunt.log.error(err) });
 ```
 
@@ -42,12 +41,6 @@ Type: `Array`
 Default value: `['js', 'coffee']`
 
 Valid file extensions to import properties from within `configDir`.
-
-#### options.verbose
-Type: `Boolean`
-Default value: false
-
-Clutters your log output with details about which files were loaded.
 
 ### Usage Example
 
