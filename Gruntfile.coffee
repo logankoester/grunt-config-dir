@@ -19,7 +19,8 @@ module.exports = (grunt) ->
   require('./src/tasks/config_dir')(grunt)
 
   grunt.registerTask 'test', [
-    'nodeunit'
+    'nodeunit',
+    'coffeelint'
   ]
 
   grunt.registerTask 'default', [

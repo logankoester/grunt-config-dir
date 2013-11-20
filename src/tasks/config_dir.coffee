@@ -28,7 +28,9 @@ module.exports = (grunt, options, errHandler) ->
         filename: filename
         stat: stat
 
-      grunt.verbose.ok "grunt.config property [#{match[1]}] loaded from #{filename}" if res.options.verbose
+      if res.options.verbose
+        msg = "grunt.config property [#{match[1]}] loaded from #{filename}"
+        grunt.verbose.ok msg
 
     else
       res.ignored.push
@@ -36,7 +38,8 @@ module.exports = (grunt, options, errHandler) ->
         filename: filename
         stat: stat
 
-      grunt.verbose.debug "grunt.config file ignored: #{filename}" if res.options.verbose
+      if res.options.verbose
+        grunt.verbose.debug "grunt.config file ignored: #{filename}"
 
   , (err) ->
     grunt.verbose.error "grunt.config file error: #{err}"

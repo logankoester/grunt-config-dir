@@ -20,7 +20,7 @@
     res.files = [];
     res.ignored = [];
     res.walk = walk.walkSync(res.options.configDir, function(baseDir, filename, stat) {
-      var match;
+      var match, msg;
       if (match = filename.match(res.regexp)) {
         grunt.config.set(match[1], require(path.join(baseDir, filename))(grunt));
         res.files.push({
@@ -29,7 +29,8 @@
           stat: stat
         });
         if (res.options.verbose) {
-          return grunt.verbose.ok("grunt.config property [" + match[1] + "] loaded from " + filename);
+          msg = "grunt.config property [" + match[1] + "] loaded from " + filename;
+          return grunt.verbose.ok(msg);
         }
       } else {
         res.ignored.push({
