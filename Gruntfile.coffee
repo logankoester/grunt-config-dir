@@ -14,6 +14,8 @@ module.exports = (grunt) ->
       options:
         jshintrc: '.jshintrc'
 
-  grunt.loadNpmTasks 'grunt-contrib-jshint'
 
-  grunt.registerTask 'default', ['jshint']
+  # Inject project configuration files from grunt/
+  require('./tasks/config_dir')(grunt)
+
+  grunt.registerTask 'default', ['coffee']
