@@ -1,7 +1,7 @@
 {
   "name": "grunt-config-dir",
   "description": "Split a grunt configuration into multiple files",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/logankoester/grunt-config-dir",
   "author": {
     "name": "Logan Koester",
