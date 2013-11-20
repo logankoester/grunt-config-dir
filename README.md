@@ -97,11 +97,28 @@ Thanks!
 
 ## Release History
 
-0.3.0 - Cleaner verbose logging, fixed an issue with joining multiple file extensions, more comprehensive return object
+### 0.3.1
 
-0.2.0 - Fixes entry point, deprecates `verbose` option in favor of [grunt.verbose](http://gruntjs.com/api/grunt.log#verbose-and-notverbose)
+  * Converts source to CoffeeScript
+  * Uses grunt/ directory in own source to provide usage example and test target
+  * Adds nodeunit tests
+  * Adds linting to test chain
+  * Enforces dependency on `fs-walk`
 
-0.1.0 - First release
+### 0.3.0
+
+  * Cleaner verbose logging
+  * Fixed an issue with joining multiple file extensions
+  * More comprehensive return object
+
+### 0.2.0
+
+  * Fixes entry point
+  * Deprecates `verbose` option in favor of [grunt.verbose](http://gruntjs.com/api/grunt.log#verbose-and-notverbose)
+
+### 0.1.0
+
+  * First release
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/logankoester/grunt-config-dir/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
