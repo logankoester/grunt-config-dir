@@ -5,7 +5,14 @@ module.exports = (grunt) ->
 
   tasks:
     expand: true
-    cwd: 'tasks'
+    cwd: 'src/tasks'
     src: ['**/*.coffee']
     dest: 'tasks/'
+    ext: '.js'
+
+  test:
+    expand: true
+    cwd: 'src/test'
+    src: ['**/*.coffee']
+    dest: 'test/'
     ext: '.js'

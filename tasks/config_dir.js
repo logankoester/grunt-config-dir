@@ -1,31 +1,28 @@
 (function() {
-  "use strict";
   var path, walk;
 
-  walk = require("fs-walk");
+  walk = require('fs-walk');
 
-  path = require("path");
+  path = require('path');
 
   module.exports = function(grunt, options, errHandler) {
-    var match, regexp, res;
-    res = void 0;
-    regexp = void 0;
-    match = void 0;
+    var res;
     res = {
       options: {}
     };
     res._defaultOptions = {
-      configDir: path.resolve("grunt"),
-      fileExtensions: ["js", "coffee"]
+      configDir: path.resolve('grunt'),
+      fileExtensions: ['js', 'coffee']
     };
     grunt.util._.extend(res.options, res._defaultOptions, options);
-    res.fileExtensionPattern = res.options.fileExtensions.join("|");
+    res.fileExtensionPattern = res.options.fileExtensions.join('|');
     res.regexp = new RegExp("^(.*).(" + res.fileExtensionPattern + ")$");
     res.files = [];
     res.ignored = [];
     res.walk = walk.walkSync(res.options.configDir, function(baseDir, filename, stat) {
+      var match;
       if (match = filename.match(res.regexp)) {
-        grunt.config.set(match[1], require(baseDir + "/" + filename)(grunt));
+        grunt.config.set(match[1], require(path.join(baseDir, filename))(grunt));
         res.files.push({
           baseDir: baseDir,
           filename: filename,
@@ -46,7 +43,7 @@
       }
     }, function(err) {
       grunt.verbose.error("grunt.config file error: " + err);
-      if (typeof errHandler === "function") {
+      if (typeof errHandler === 'function') {
         return errHandler(err);
       }
     });

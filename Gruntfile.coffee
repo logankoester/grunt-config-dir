@@ -16,6 +16,14 @@ module.exports = (grunt) ->
 
 
   # Inject project configuration files from grunt/
-  require('./tasks/config_dir')(grunt)
+  require('./src/tasks/config_dir')(grunt)
 
-  grunt.registerTask 'default', ['coffee']
+  grunt.registerTask 'test', [
+    'nodeunit'
+  ]
+
+  grunt.registerTask 'default', [
+    'clean',
+    'coffee',
+    'test'
+  ]
