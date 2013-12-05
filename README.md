@@ -4,6 +4,8 @@
 [![Dependency Status](https://david-dm.org/logankoester/grunt-config-dir.png)](https://david-dm.org/logankoester/grunt-config-dir)
 [![devDependency Status](https://david-dm.org/logankoester/grunt-config-dir/dev-status.png)](https://david-dm.org/logankoester/grunt-config-dir#info=devDependencies)
 
+[![NPM](https://nodei.co/npm/grunt-config-dir.png?downloads=true)](https://nodei.co/npm/grunt-config-dir/)
+
 > Split a grunt configuration into multiple files
 
 ## Getting Started
