@@ -8,14 +8,6 @@
 [![Gittip](http://img.shields.io/gittip/logankoester.png)](https://www.gittip.com/logankoester/)
 
 [![NPM](https://nodei.co/npm/grunt-config-dir.png?downloads=true)](https://nodei.co/npm/grunt-config-dir/)
-
-[![xrefs](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/xrefs.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
-[![funcs](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/funcs.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
-[![library users](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/library-users.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
-[![authors](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/authors.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
-[![Total views](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/counters/views.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
-[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/counters/views-24h.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
-
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
 
@@ -131,3 +123,10 @@ Thanks!
   * First release
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/logankoester/grunt-config-dir/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+[![xrefs](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/xrefs.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![funcs](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/funcs.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![library users](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/library-users.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![authors](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/authors.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![Total views](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/counters/views.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/counters/views-24h.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
