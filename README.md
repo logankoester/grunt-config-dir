@@ -2,6 +2,7 @@
 > Split a grunt configuration into multiple files
 
 [![Build Status](https://travis-ci.org/logankoester/grunt-config-dir.png)](https://travis-ci.org/logankoester/grunt-config-dir)
+[![Strider Status](http://ci.ldk.io/logankoester/grunt-config-dir/badge)](http://ci.ldk.io/logankoester/grunt-config-dir/)
 [![status](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/status.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
 [![Dependency Status](https://david-dm.org/logankoester/grunt-config-dir.png)](https://david-dm.org/logankoester/grunt-config-dir)
 [![devDependency Status](https://david-dm.org/logankoester/grunt-config-dir/dev-status.png)](https://david-dm.org/logankoester/grunt-config-dir#info=devDependencies)
