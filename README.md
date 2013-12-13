@@ -1,9 +1,18 @@
 # grunt-config-dir
 
 [![Build Status](https://travis-ci.org/logankoester/grunt-config-dir.png)](https://travis-ci.org/logankoester/grunt-config-dir)
+[![status](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/status.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
 [![Dependency Status](https://david-dm.org/logankoester/grunt-config-dir.png)](https://david-dm.org/logankoester/grunt-config-dir)
 [![devDependency Status](https://david-dm.org/logankoester/grunt-config-dir/dev-status.png)](https://david-dm.org/logankoester/grunt-config-dir#info=devDependencies)
 [![Gittip](http://img.shields.io/gittip/logankoester.png)](https://www.gittip.com/logankoester/)
+
+
+[![xrefs](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/xrefs.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![funcs](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/funcs.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![library users](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/library-users.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![authors](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/badges/authors.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![Total views](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/counters/views.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/logankoester/grunt-config-dir/counters/views-24h.png)](https://sourcegraph.com/github.com/logankoester/grunt-config-dir)
 
 [![NPM](https://nodei.co/npm/grunt-config-dir.png?downloads=true)](https://nodei.co/npm/grunt-config-dir/)
 
@@ -123,6 +132,4 @@ Thanks!
 
   * First release
 
-
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/logankoester/grunt-config-dir/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
