@@ -88,6 +88,22 @@ module.exports = function(grunt) {
 };
 ```
 
+## Comparison with alternatives
+
+Before choosing `grunt-config-dir`, you may want to explore other libraries with the same goal.
+
+| Feature | [grunt-config-dir](https://github.com/logankoester/grunt-config-dir) | [load-grunt-config](https://github.com/firstandthird/load-grunt-config) |
+|:---|:---:|:---:|
+| Configurable tasks directory | :heavy_check_mark: | :heavy_check_mark: |
+| Default tasks directory | `grunt/` | `grunt/` |
+| CoffeeScript | :heavy_check_mark: | :heavy_check_mark: |
+| Tests | :heavy_check_mark: | :heavy_check_mark: |
+| Dogfooding | :heavy_check_mark: | :heavy_check_mark: |
+| Compatibility with [grunt-environment](https://github.com/logankoester/grunt-environment) | :heavy_check_mark: | :question: |
+| Support for returning a function | :x: | :heavy_check_mark: |
+| Aliases file | :x: | :heavy_check_mark: |
+| YAML support | :x: | :heavy_check_mark: |
+
 ## Contributing
 
 1. Fork the [repository on Github](https://github.com/logankoester/grunt-config-dir)
