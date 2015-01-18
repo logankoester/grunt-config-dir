@@ -47,6 +47,12 @@ Default value: `['js', 'coffee']`
 
 Valid file extensions to import properties from within `configDir`.
 
+#### options.mergeConfig
+Type: `Boolean`
+Default value: `true`
+
+If multiple configurations are found for the same task, they will be merged by default. If set to false, new task configurations will override previous ones.
+
 ### Usage Example
 
 #### Gruntfile.js

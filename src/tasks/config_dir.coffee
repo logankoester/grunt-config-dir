@@ -8,6 +8,8 @@ module.exports = (grunt, options, errHandler) ->
   res._defaultOptions =
     configDir: path.resolve('grunt')
     fileExtensions: ['js', 'coffee']
+    mergeConfig: true
+
   grunt.util._.extend res.options, res._defaultOptions, options
 
   res.fileExtensionPattern = res.options.fileExtensions.join '|'
@@ -19,9 +21,17 @@ module.exports = (grunt, options, errHandler) ->
   res.walk = walk.walkSync(res.options.configDir, (baseDir, filename, stat) ->
     if match = filename.match(res.regexp)
 
-      grunt.config.set match[1], require(
+      task = match[1]
+      taskConfig = {}
+      taskConfig[task] = require(
         path.join(baseDir, filename)
       )(grunt)
+
+
+      if res.options.mergeConfig
+        grunt.config.merge taskConfig
+      else
+        grunt.config.set task, taskConfig[task]
 
       res.files.push
         baseDir: baseDir
